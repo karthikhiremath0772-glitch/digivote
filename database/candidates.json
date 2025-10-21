@@ -1,0 +1,26 @@
+[
+  {
+    "id": "candidate-1",
+    "name": "Alice Rao",
+    "party": "Blue Party",
+    "description": "Former mayor focused on education reform and digital literacy.",
+    "photo": "9d2ce6b5ee908bd6b21ce577997c7495",
+    "partyLogo": "ddd36cf58f5136c01718dd435092de89"
+  },
+  {
+    "id": "candidate-2",
+    "name": "Bhaskar N",
+    "party": "Green Party",
+    "description": "Environmental activist promoting clean energy and sustainable farming.",
+    "photo": "a0e9fa6ec35dedc944b5749a40d55629",
+    "partyLogo": "83c3a571cd4b8e1f74682b2277a8b826"
+  },
+  {
+    "id": "candidate-3",
+    "name": "Chitra S",
+    "party": "Red Party",
+    "description": "Social worker advocating for women's rights and healthcare access.",
+    "photo": "e876509d1f5c9069feea6eab9af40462",
+    "partyLogo": "a2545d73d02468357f247777f3161c5d"
+  }
+]

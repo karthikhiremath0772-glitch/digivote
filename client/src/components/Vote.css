@@ -1,0 +1,52 @@
+.candidate-card {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.candidate-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.party-label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.animated-label {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  animation: pulseColor 3s infinite;
+}
+
+@keyframes pulseColor {
+  0% { color: #007bff; }
+  33% { color: #4caf50; }
+  66% { color: #e91e63; }
+  100% { color: #007bff; }
+}

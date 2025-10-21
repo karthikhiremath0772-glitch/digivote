@@ -1,0 +1,72 @@
+[
+  {
+    "voterId": "test-voter-XYZ",
+    "candidateId": "candidate-1",
+    "ts": 1760895211091
+  },
+  {
+    "voterId": "test-voter",
+    "candidateId": "candidate-1",
+    "ts": 1760935240450
+  },
+  {
+    "voterId": "demo-user-001",
+    "candidateId": "candidate-2",
+    "ts": 1760937499458
+  },
+  {
+    "voterId": "demo-user-002",
+    "candidateId": "candidate-1",
+    "ts": 1760939594217
+  },
+  {
+    "voterId": "voter-1760944085285",
+    "candidateId": "candidate-1",
+    "ts": 1760944085295
+  },
+  {
+    "voterId": "voter-1760944100904",
+    "candidateId": "candidate-2",
+    "ts": 1760944100913
+  },
+  {
+    "voterId": "voter-1760951658656",
+    "candidateId": "candidate-1",
+    "ts": 1760951658682
+  },
+  {
+    "voterId": "voter-1760963937829",
+    "candidateId": "candidate-1",
+    "ts": 1760963937858
+  },
+  {
+    "voterId": "voter-1760972612834",
+    "candidateId": "candidate-1",
+    "ts": 1760972612898
+  },
+  {
+    "voterId": "voter-1760975494544",
+    "candidateId": "candidate-3",
+    "ts": 1760975494574
+  },
+  {
+    "voterId": "voter-1761021188029",
+    "candidateId": "candidate-1",
+    "ts": 1761021188041
+  },
+  {
+    "voterId": "voter-1761030758213",
+    "candidateId": "candidate-1",
+    "ts": 1761030758251
+  },
+  {
+    "voterId": "voter-1761030762952",
+    "candidateId": "candidate-2",
+    "ts": 1761030762966
+  },
+  {
+    "voterId": "voter-1761031641672",
+    "candidateId": "candidate-1",
+    "ts": 1761031641702
+  }
+]

@@ -1,0 +1,99 @@
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.vote-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #052de0, #e7d42c, #7feb04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vote-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.vote-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  animation: pulseColor 3s infinite;
+}
+
+
+
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.candidate-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.stop-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.stop-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stop-btn:hover {
+  background-color: #c62828;
+}
+
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.party-label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.animated-label {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  animation: pulseColor 3s infinite;
+}
+
+@keyframes pulseColor {
+  0% { color: #007bff; }
+  33% { color: #4caf50; }
+  66% { color: #e91e63; }
+  100% { color: #007bff; }
+}

@@ -1,0 +1,56 @@
+.results-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #007bff, #4caf50, #e91e63);
+  background-clip: text; /* standard */
+  -webkit-background-clip: text; /* required for Chrome/Safari */
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+  background-size: 200% 200%;
+}
+
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.result-card {
+  border-radius: 12px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f3e5f5, #e0f7fa);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+}
+
+.result-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.party-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.vote-count {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.winner {
+  border: 3px solid gold;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
