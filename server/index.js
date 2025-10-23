@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 
 // ✅ Middleware
@@ -27,12 +29,46 @@ app.post('/api/vote', (req, res) => {
     return res.status(400).json({ error: 'Missing candidateId' });
   }
 
-  console.log('✅ Vote received for:', candidateId);
+  // ✅ Save vote to votes.json
+  const votesPath = path.join(__dirname, '../database/votes.json');
+  const votes = fs.existsSync(votesPath)
+    ? JSON.parse(fs.readFileSync(votesPath, 'utf-8'))
+    : [];
+
+  votes.push({ candidateId, timestamp: Date.now() });
+  fs.writeFileSync(votesPath, JSON.stringify(votes, null, 2));
+
+  console.log('✅ Vote recorded for:', candidateId);
   res.json({ message: 'Vote recorded successfully!' });
 });
 
+// ✅ Results summary route (used by frontend)
+app.get('/api/results/summary', (req, res) => {
+  const votesPath = path.join(__dirname, '../database/votes.json');
+  const candidatesPath = path.join(__dirname, '../database/candidates.json');
+
+  const votes = fs.existsSync(votesPath)
+    ? JSON.parse(fs.readFileSync(votesPath, 'utf-8'))
+    : [];
+
+  const candidates = fs.existsSync(candidatesPath)
+    ? JSON.parse(fs.readFileSync(candidatesPath, 'utf-8'))
+    : [];
+
+  const counts = candidates.map(c => ({
+    id: c.id,
+    name: c.name,
+    votes: votes.filter(v => v.candidateId === c.id).length
+  }));
+
+  res.json({
+    counts,
+    totalVotes: votes.length
+  });
+});
+
 // ✅ Start server
-const PORT = 4000;
+const PORT = 4004;
 app.listen(PORT, () => {
   console.log(`Server listening ${PORT}`);
 });
